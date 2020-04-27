@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="augusticor" />
+    <title>Oscar Bosigas Form</title>
+</head>
+
+<body>
+
+    <h1>Form</h1>
+
+    <div>
+        <form>
+            <fieldset>
+                <h3>Personal Information</h3>
+                <label>First Name</label>
+                <input required type="text" id="tname" name="first_Name">
+                <br>
+                <label>Last Name</label>
+                <input required type="text" id="tlastname" name="last_Name">
+                <br>
+                <label>Email</label>
+                <input required type="email" id="temail" name="email">
+                <br>
+                <label>Date of birth</label>
+                <input required type="date" id="tdate" name="date">
+                <br>
+                <label>Gender</label>
+                <input required type="text" id="gender" list="l1" required pattern="[Mm]Male | [Ff]Female | [Oo]Other">
+                <datalist id="l1">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </datalist>
+            </fieldset>
+                <br>
+            <fieldset>
+                <h3>Socioeconomic status</h3>
+                <label>Stratum 1</label>
+                <input required type="radio" id="st1" value="1">
+                <label>Stratum 2</label>
+                <input required type="radio" id="st2" value="2">
+                <label>Stratum 3</label>
+                <input required type="radio" id="st3" value="3">
+                <label>Stratum 4</label>
+                <input required type="radio" id="st4" value="4">
+            </fieldset>
+                <br>
+            <fieldset>
+                <h3>Hobbies</h3>
+                <label>Music</label>
+                <input required type="checkbox" id="cmusic" value="music">
+                <label>Video Games</label>
+                <input required type="checkbox" id="cvideogames" value="Video Games">
+                <label>Sports</label>
+                <input required type="checkbox" id="csports" value="Sports">
+            </fieldset>
+            <fieldset>
+                <h3>Profile Avatar</h3>
+                <label>Upload your image</label>
+                <input required type="file" id="image" name="image-profile" accept="image/png, image/jpeg">
+            </fieldset>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
