@@ -16,19 +16,19 @@
         <form>
             <fieldset>
                 <h3>Personal Information</h3>
-                <label>First Name</label>
+                <label for="firstName">First Name</label>
                 <input required type="text" id="tname" name="first_Name">
                 <br>
-                <label>Last Name</label>
+                <label for="LastName">Last Name</label>
                 <input required type="text" id="tlastname" name="last_Name">
                 <br>
-                <label>Email</label>
+                <label for="email">Email</label>
                 <input required type="email" id="temail" name="email">
                 <br>
-                <label>Date of birth</label>
+                <label for="dateOfBirth">Date of birth</label>
                 <input required type="date" id="tdate" name="date">
                 <br>
-                <label>Gender</label>
+                <label for="Gender">Gender</label>
                 <input required type="text" id="gender" list="l1" required pattern="[Mm]Male | [Ff]Female | [Oo]Other">
                 <datalist id="l1">
                     <option value="Male">Male</option>
@@ -39,32 +39,32 @@
                 <br>
             <fieldset>
                 <h3>Socioeconomic status</h3>
-                <label>Stratum 1</label>
+                <label for="Stratum1">Stratum 1</label>
                 <input required type="radio" id="st1" value="1">
-                <label>Stratum 2</label>
+                <label for="Stratum2">Stratum 2</label>
                 <input required type="radio" id="st2" value="2">
-                <label>Stratum 3</label>
+                <label for="Stratum3">Stratum 3</label>
                 <input required type="radio" id="st3" value="3">
-                <label>Stratum 4</label>
+                <label for="Stratum4">Stratum 4</label>
                 <input required type="radio" id="st4" value="4">
             </fieldset>
                 <br>
             <fieldset>
                 <h3>Hobbies</h3>
-                <label>Music</label>
+                <label for="music">Music</label>
                 <input required type="checkbox" id="cmusic" value="music">
-                <label>Video Games</label>
+                <label for="videoGames">Video Games</label>
                 <input required type="checkbox" id="cvideogames" value="Video Games">
-                <label>Sports</label>
+                <label for="sports">Sports</label>
                 <input required type="checkbox" id="csports" value="Sports">
             </fieldset>
             <fieldset>
                 <h3>Profile Avatar</h3>
-                <label>Upload your image</label>
+                <label for="uploadYourImage">Upload your image</label>
                 <input required type="file" id="image" name="image-profile" accept="image/png, image/jpeg">
             </fieldset>
             <br>
-            <button type="submit">Send</button>
+            <button >Send</button>
         </form>
     </div>
 
