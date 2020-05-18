@@ -18,15 +18,12 @@
                 <h3>Personal Information</h3>
                 <label for="firstName">First Name</label>
                 <input required type="text" id="tname" name="first_Name">
-                 
-                <label for="LastName">Last Name</label>
+                <label for="lastName">Last Name</label>
                 <input required type="text" id="lastname" name="last_Name">
-                 
                 <label for="email">Email</label>
                 <input required type="email" id="email" name="email">
-                 
                 <label for="dateOfBirth">Date of birth</label>
-                <input required type="date" id="tdate" name="date">
+                <input required type="date" id="dateOfBirth" name="date">
             <fieldset>
                 <label for="gender">Gender</label>
                 <input required type="text" id="gender" list="l1" required pattern="[Mm]Male | [Ff]Female | [Oo]Other">
@@ -62,8 +59,8 @@
                 <label for="uploadYourImage">Upload your image</label>
                 <input required type="file" id="image" name="image-profile" accept="image/png, image/jpeg">
             </fieldset>
-             
             <button >Send</button>
+            <button type="reset">Reset</button>
         </form>
     </div>
 
